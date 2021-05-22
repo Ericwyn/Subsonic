@@ -4,8 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal" >
-		
-	<ImageView
+
+	<!--	播放栏	-->
+	<github.daneren2005.dsub.view.RoundImageView
 		android:id="@+id/notification_image"
 		android:layout_width="64.0dip"
 		android:layout_height="64.0dip"

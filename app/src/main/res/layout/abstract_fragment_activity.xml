@@ -50,17 +50,22 @@
 			<LinearLayout
 				android:id="@+id/bottom_bar"
 				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
+				android:layout_height="64dp"
 				style="@style/BasicButton"
 				android:orientation="horizontal"
 				android:elevation="4dp">
 
-				<github.daneren2005.dsub.view.RecyclingImageView
+				<github.daneren2005.dsub.view.RoundImageView
 					android:id="@+id/album_art"
-					android:layout_width="?attr/actionBarSize"
-					android:layout_height="?attr/actionBarSize"
+					app:type="circle"
+					android:layout_marginLeft="10dp"
+					android:layout_marginStart="10dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginEnd="5dp"
+					android:layout_width="42dp"
+					android:layout_height="42dp"
 					android:layout_gravity="left|center"
-					android:scaleType="fitCenter"/>
+					android:scaleType="fitCenter" />
 
 				<LinearLayout
 					android:layout_width="0dp"

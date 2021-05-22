@@ -1109,7 +1109,7 @@ public class SubsonicActivity extends AppCompatActivity implements OnItemSelecte
 		} else {
 			drawerServerName.setText(Util.getServerName(this));
 			drawerUserName.setText(UserUtil.getCurrentUsername(this));
-			drawerUserAvatar.setVisibility(View.VISIBLE);
+			drawerUserAvatar.setVisibility(View.GONE);
 			getImageLoader().loadAvatar(this, drawerUserAvatar, UserUtil.getCurrentUsername(this));
 			drawerHeader.setClickable(true);
 			drawerHeaderToggle.setVisibility(View.VISIBLE);

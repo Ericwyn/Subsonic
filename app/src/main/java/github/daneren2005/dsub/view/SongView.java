@@ -20,6 +20,8 @@ package github.daneren2005.dsub.view;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
@@ -281,7 +283,11 @@ public class SongView extends UpdateView2<MusicDirectory.Entry, Boolean> {
 		if (playing) {
 			if(!this.playing) {
 				this.playing = playing;
-				playingTextView.setCompoundDrawablesWithIntrinsicBounds(DrawableTint.getDrawableRes(context, R.attr.playing), 0, 0, 0);
+
+				Drawable img =  ContextCompat.getDrawable(context, DrawableTint.getDrawableRes(context, R.attr.playing));
+
+				img.setBounds(0, 0, 48, 48);
+				playingTextView.setCompoundDrawables(img, null, null, null);
 			}
 		} else {
 			if(this.playing) {
